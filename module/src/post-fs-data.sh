@@ -7,7 +7,7 @@ fi
 
 cd "$MODDIR"
 getprop ro.dalvik.vm.native.bridge > /dev/.native_bridge
-resetprop ro.dalvik.vm.native.bridge libzygisk_loader.so
+resetprop ro.dalvik.vm.native.bridge libnope_loader.so
 
 if [ "$(which magisk)" ]; then
   for file in ../*; do
